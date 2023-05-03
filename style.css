@@ -17,7 +17,10 @@ body{
     color: #fff;
 }
 .btn.btn-primary,
-.bt.btn-secondary{
+.btn.btn-secondary{
+    color: #fff;
+}
+.btn .btn-outline-primary{
     color: #fff;
 }
 .carousel-caption{
@@ -42,6 +45,14 @@ body{
 #courses{
     background-color: rgb(224, 241, 241);
 }
+
+.card {
+    margin-bottom: 20px;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
 /*====================footer================*/
 
 .footer{
@@ -72,9 +83,12 @@ ul{
     color: black;
     font-size: 16px;
 }
-.background {
-    background-image: url('./HomeBackground.png');
-    background-repeat: no-repeat;
+/* .background {
+    background-image: url('./Images/HomeBackground.png');
+    min-height: 50vh;
+    background-position: center;
     background-size: cover;
-  }
+    background-repeat: no-repeat;
+   
+  } */
   
