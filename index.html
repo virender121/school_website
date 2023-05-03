@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!--css file-->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./scss/main.css">
     <!--Bootstrap 5 CDN-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css">
     <!--google fonts-->
@@ -59,66 +59,16 @@
               </div>
             </div>
           </nav>
-          
-
-
-        <!--===========Header Section===========-->
-        <!-- <div class="container-fluid p-0 mb-5">
-          <div class="carousel slide" id="header-carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./Images/schoolimg1.jpg" alt="" class="w-100">
-                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                  <div class="p-3" style="max-width: 700px;">
-                    <h6 class="section-title text-white text-uppercase mb-3 animated slideInDown">Lorem, ipsum dolor.</h6>
-                    <h1 class="display-3 text-white mb-4 animated slideInDown">Lorem ipsum dolor sit amet.</h1>
-                    <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInDown"></a>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="./Images/schoolimg2.jpg" alt="" class="w-100">
-                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                  <div class="p-3" style="max-width: 700px;">
-                    <h6 class="section-title text-white text-uppercase mb-3 animated slideInDown">Lorem, ipsum dolor.</h6>
-                    <h1 class="display-3 text-white mb-4 animated slideInDown">Lorem ipsum dolor sit amet.</h1>
-                    <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInDown"></a>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="./Images/Schoolimg3.jpg" alt="" class="w-100">
-                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                  <div class="p-3" style="max-width: 700px;">
-                    <h6 class="section-title text-white text-uppercase mb-3 animated slideInDown">Lorem, ipsum dolor.</h6>
-                    <h1 class="display-3 text-white mb-4 animated slideInDown">Lorem ipsum dolor sit amet.</h1>
-                    <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInDown"></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
-              <span class="carousel-control-next-icon"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        </div>
-         -->
-
            
         
 
        <!--============Home=============-->
         <section class="pt-md-5 px-md-5">
-            <div class="background">
+        
               <div class="row">
                 <div class="col-md-6" style="margin-top: 50px;">
-                  <h1 class="text-start fw-bold" style="font-size: 3rem;">Virtual <span style="color: blue;">schooling</span> made even better</h1>
-                  <h4 class="fw-bold" style="color: gray; font-size: 1.7rem;">Engaging Every <span style="color:blue;">learner.</span></h4>
+                  <h1 class="text-start fw-bold" style="font-size: 3rem;">Virtual <span style="color: rgb(38, 107, 255);">schooling</span> made even better</h1>
+                  <h4 class="fw-bold" style="color: gray; font-size: 1.7rem;">Engaging Every <span style="color:rgb(38, 107, 255);">learner.</span></h4>
                   <p style="color: gray; font-size: 1.5rem;">Choose a course, master it.</p>
                   <button class="btn btn-primary fw-900">Explore Courses</button>
                 </div>
@@ -126,13 +76,13 @@
                   <img src="./Images/HomeBackground.png" class="img-fluid" alt="...">
                 </div>
               </div>
-            </div>
+            
   
           
 
-          <div class="card " style="margin-top: 5rem;">
+          <div class="card ">
             <div class="row">
-              <div class="col-md-10">
+              <div class="col-md-8">
                  <div class="card-body">
                 
               
@@ -142,7 +92,7 @@
                     <div class="col-md-4">
                     <img src="./Images/fileImage.jpg" class="img-fluid rounded-start" alt="..."></div>
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-md-4">
                     <h1 class="card-title">1 k+</h1>
                     <p class="card-text">Total courses</p>
                   </div>
@@ -151,9 +101,9 @@
                     
 
                       <div class = "col-md-4">
-                    <img src="./Images/teacherImage.jpg" class="img-fluid rounded-start" alt="..."></div>
+                    <img src="./Images/teacherImage.jpg" class="img-fluid rounded-start" alt="..." style="width: 100%;"></div>
                   </div>
-                    <div class="col-md-8">
+                    <div class="col-md-4">
                     <h1 class="card-title">1 k+</h1>
                     <p class="card-text">Total courses</p></div>
                   
@@ -162,7 +112,7 @@
                     <div class="col-md-4">
                     <img src="./Images/personsImage.jpg" class="img-fluid rounded-start" alt="..."></div>
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-md-4">
                     <h1 class="card-title">1 k+</h1>
                     <p class="card-text">Total courses</p>
                   </div>
@@ -186,85 +136,85 @@
       </div>
           <button class="btn btn-outline-primary">All categories</button>
         </div>
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="card mb-3 " >
+        <div class="row row-cols-1 row-cols-md-3 g-4 mt-2 mb-4">
+        <div class="card mb-3 ms-3 " style="width: 23rem;" >
           <div class="row">
             <div class="col-md-4 text-center">
               <img style="margin-top: 20px;"src="./Images/designingImage.jpg" class="img-fluid rounded-start" alt="...">
             </div>
             <div class="col-md-8">
               <div class="card-body">
-                <h2 class="card-title">Design & Development</h2>
-                <p class="card-text">100+ Courses Available</p>
+                <h4 class="card-title fw-bold">Design & Development</h4>
+                <p class="card-text fs-1.5rem">100+ Courses Available</p>
               </div>
               
             </div>
           </div>
         </div>
-        <div class="card mb-3">
+        <div class="card mb-3 ms-3 "style="width: 23rem;">
           <div class="row g-0">
             <div class="col-md-4">
               <img style="margin-top: 20px;" src="./Images/RobotImage.jpg" class="img-fluid rounded-start" alt="...">
             </div>
             <div class="col-md-8">
               <div class="card-body">
-                <h2 class="card-title">Science & Practicals</h2>
-                <p class="card-text">100+ Courses Available</p>
+                <h4 class="card-title fw-bold">Science & Practicals</h4>
+                <p class="card-text fs-1.5rem">100+ Courses Available</p>
               </div>
               
             </div>
           </div>
         </div>
-        <div class="card mb-3">
+        <div class="card mb-3 ms-3 "style="width: 23rem;">
           <div class="row g-0">
             <div class="col-md-4">
               <img src="./Images/geometryImage.jpg" style="margin-top: 20px;" class="img-fluid rounded-start" alt="...">
             </div>
             <div class="col-md-8">
               <div class="card-body">
-                <h2 class="card-title">Geometry</h2>
-                <p class="card-text">20+ Courses Available</p>
+                <h4 class="card-title fw-bold">Geometry</h4>
+                <p class="card-text fs-1.5rem">20+ Courses Available</p>
               </div>
               
             </div>
           </div>
-        </div>  <div class="card mb-3">
+        </div>  <div class="card mb-3 ms-3"style="width: 23rem;">
           <div class="row g-0">
             <div class="col-md-4">
               <img src="./Images/cardImage.jpg" style="margin-top: 20px;" class="img-fluid rounded-start" alt="...">
             </div>
             <div class="col-md-8">
               <div class="card-body">
-                <h2 class="card-title">Finance Management</h2>
-                <p class="card-text">10+ Courses Available</p>
+                <h4 class="card-title fw-bold">Finance Management</h4>
+                <p class="card-text fs-1.5rem">10+ Courses Available</p>
               </div>
               
             </div>
           </div>
         </div>
-        <div class="card mb-3">
+        <div class="card mb-3 ms-3 " style="width: 23rem;">
           <div class="row g-0">
             <div class="col-md-4">
               <img src="./Images/growthImage.jpg" style="margin-top: 20px;" class="img-fluid rounded-start" alt="...">
             </div>
             <div class="col-md-8">
               <div class="card-body">
-                <h5 class="card-title">Self Development</h5>
-                <p class="card-text">10+ Courses Available</p>
+                <h4 class="card-title fw-bold">Self Development</h4>
+                <p class="card-text fs-1.5rem">10+ Courses Available</p>
               </div>
               
             </div>
           </div>
         </div>
-        <div class="card mb-3">
+        <div class="card mb-3 ms-3 " style="width: 23rem;">
           <div class="row g-0">
             <div class="col-md-4">
               <img src="./Images/chatImage.jpg" style="margin-top: 20px;" class="img-fluid rounded-start" alt="...">
             </div>
             <div class="col-md-8">
               <div class="card-body">
-                <h5 class="card-title">Social Communication</h5>
-                <p class="card-text">10+ Courses Available</p>
+                <h4 class="card-title fw-bold ">Social Communication</h4>
+                <p class="card-text fs-1.5rem">10+ Courses Available</p>
               </div>
               
             </div>

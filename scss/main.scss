@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 :root{
     --primary:#fea116;
     --light: #f1f8ff;
@@ -63,9 +68,11 @@ body{
 a{
     text-decoration: none;
 }
-ul{
-    padding-left: 0;
+ol,
+ul {
+  padding-left: 0 !important;
 }
+
 .footer-links h4{
     color: black;
     font-size: 22px;
@@ -75,7 +82,7 @@ ul{
 .footer-links ul li{
     line-height: 36px;
     list-style: none;
-    
+    padding-left: 0;
 }
 
 .footer-links ul li a{
@@ -83,12 +90,5 @@ ul{
     color: black;
     font-size: 16px;
 }
-/* .background {
-    background-image: url('./Images/HomeBackground.png');
-    min-height: 50vh;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-   
-  } */
+
   
