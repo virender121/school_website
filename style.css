@@ -1,0 +1,80 @@
+:root{
+    --primary:#fea116;
+    --light: #f1f8ff;
+    --dark:#0f172b;
+
+}
+body{
+    background-color: #fff;
+}
+
+/* =====================Header section============ */
+
+.btn{
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: 0.5s;
+    color: #fff;
+}
+.btn.btn-primary,
+.bt.btn-secondary{
+    color: #fff;
+}
+.carousel-caption{
+    top: 10;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background: rgba(15,23,43,0.7); */
+    z-index: 1;
+}
+.carousel-control-prev,
+.carousel-control-next{
+    width: 10%;
+
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+    width: 3rem;
+    height: 3rem;
+}
+/* ==============Main=================== */
+#courses{
+    background-color: rgb(224, 241, 241);
+}
+/*====================footer================*/
+
+.footer{
+    background: #fff;
+    padding-top: 70px;
+}
+
+a{
+    text-decoration: none;
+}
+ul{
+    padding-left: 0;
+}
+.footer-links h4{
+    color: black;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.footer-links ul li{
+    line-height: 36px;
+    list-style: none;
+    
+}
+
+.footer-links ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+.background {
+    background-image: url('./HomeBackground.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
