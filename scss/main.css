@@ -109,3 +109,48 @@ ul {
   'GRAD' 0,
   'opsz' 48
 }
+
+/* ==============about us page=============== */
+
+/* .sub-header {
+  height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(../Images/AboutBackground.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  color: #fff;
+  top: 0;
+  z-index: 99;
+} */
+.about-mission{
+  margin-top: 5rem;
+}
+
+
+/*========================contact page========================*/
+
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48,
+  
+ 
+}
+#material-symbols-outlined{
+  font-size: 80px;
+  color: rgb(38, 107, 255);
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  height: 100vh;
+}
