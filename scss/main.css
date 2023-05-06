@@ -151,6 +151,10 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
   height: 100vh;
 }
+ p a{
+  text-decoration: none;
+  color: red;
+ }

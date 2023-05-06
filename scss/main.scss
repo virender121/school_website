@@ -72,6 +72,9 @@ ol,
 ul {
   padding-left: 0 !important;
 }
+hr:not([size]) {
+    height: 4px;
+}
 
 .footer-links h4{
     color: black;
