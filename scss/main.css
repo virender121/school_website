@@ -16,7 +16,15 @@
 body {
   background-color: #fff;
 }
+.card-body {
+  height: 100%;
+}
 
+
+/* p{
+  color: var(--gray);
+  font-size: 1.5rem;
+} */
 /* ===============Navbar============*/
 
 

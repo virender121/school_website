@@ -24,65 +24,70 @@
 <body>
 
     <div class="container-xxl bg-white p-0">
-        <!--========Navigation Bar===========-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="index.html">
-                <img src="./Images/NavLogo.png" alt="Logo">
+     <!--========Navigation Bar===========-->
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="./Images/NavLogo.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+          <ul class="navbar-nav me-5 mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="about.html">About</a>
+            </li>
+             
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Courses
               </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-                <ul class="navbar-nav me-5 mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="about.html">About</a>
-                  </li>
-                 
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Courses
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="primary.html">Primary</a></li>
-                      <li><a class="dropdown-item" href="lowerprimary.html">Lower Primary Subjects</a></li>
-                      <!-- <li><hr class="dropdown-divider"></li> -->
-                      <li><a class="dropdown-item" href="upperprimary.html">Upper Primary Subjects</a></li>
-                      <li><a class="dropdown-item" href="courseinformation.html">Course Information</a></li>
-                      <li><a class="dropdown-item" href="primaryparentrole.html">Primary parent role</a></li>
-                      <li><a class="dropdown-item" href="#">Primary newsletter</a></li>
-
-                      <li><a class="dropdown-item" href="#">Lower Secondary</a></li>
-                      <li><a class="dropdown-item" href="#">Lower Secondary Subjects</a></li>
-                      <li><a class="dropdown-item" href="#">Course Information</a></li>
-
-                      <li><a class="dropdown-item" href="#">Secondary</a></li>
-                      <li><a class="dropdown-item" href="#">Secondary Subjects</a></li>
-                      <li><a class="dropdown-item" href="#">Course Information</a></li>
-                      
-                      
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="mentors.html">Mentors</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="blogs.html">Blogs</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact Us</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link border-end" href="#">Login</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link border-start" href="#">Sign Up</a>
-                  </li>
-                 
-                </ul>
+              <ul class="dropdown-menu dropdown-menu-lg-end bg-light" aria-labelledby="navbarDropdown">
+                <div class="d-flex">
+                <div class="d-flex-column">
+                <li><a class="dropdown-item" href="primary.html">Primary</a></li>
+                <li><a class="dropdown-item" href="lowerprimary.html">Lower Primary Subjects</a></li>
+          
+                <li><a class="dropdown-item" href="upperprimary.html">Upper Primary Subjects</a></li>
+                <li><a class="dropdown-item" href="courseinformation.html">Course Information</a></li>
+                <li><a class="dropdown-item" href="primaryparentrole.html">Primary parent role</a></li>
+                <li><a class="dropdown-item" href="primarynewsletter.html">Primary newsletter</a></li>
               </div>
-            </div>
-          </nav>
+              <div class="d-flex-column">
+                <li><a class="dropdown-item" href="lowersecondary.html">Lower Secondary</a></li>
+                <li><a class="dropdown-item" href="#">Lower Secondary Subjects</a></li>
+                <li><a class="dropdown-item" href="#">Course Information</a></li>
+                </div>
+                <div class="d-flex-column">
+                <li><a class="dropdown-item" href="#">Secondary</a></li>
+                <li><a class="dropdown-item" href="#">Secondary Subjects</a></li>
+                <li><a class="dropdown-item" href="#">Course Information</a></li>
+              </div>
+              </div>
+                
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mentors.html">Mentors</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blogs.html">Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sign Up</a>
+            </li>
+           
+          </ul>
+        </div>
+      </div>
+    </nav>
            
         
 
@@ -271,99 +276,6 @@
           </div>
   </section>
           
-           <!-- <section id="explore" class="container-fluid pt-md-5 px-md-5">
-            <div class=" justify-content-between align-items-center mb-4">
-              <div class="d-flex flex-column">
-                <h1 class="text-start my-1 fw-bold" style="font-size: 3rem;">Explore courses by category</h1>
-                <p class="text-start my-1" style="font-size: 1.5rem;"><small class="text-muted">Browse top class courses by browsing our category which will be more easy for you</small></p>
-              </div>
-              <button class="btn btn-outline-primary">All categories</button>
-            </div>
-            <div class="card-deck">
-              <div class="card Regular shadow border-0">
-                <div class="row ">
-                  <div class="col-md-3 text-center">
-                    <img style="margin-top: 20px;"src="./Images/designingImage.jpg" class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-md-9">
-                    <div class="card-body">
-                      <h4 class="card-title fw-bold">Design & Development</h4>
-                      <p class="card-text fs-1.5rem">100+ Courses Available</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          
-              <div class="card Regular shadow border-0">
-                <div class="row w-100">
-                  <div class="col-md-3 text-center">
-                    <img style="margin-top: 20px;" src="./Images/RobotImage.jpg" class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-md-9">
-                    <div class="card-body">
-                      <h4 class="card-title fw-bold">Science & Practicals</h4>
-                      <p class="card-text fs-1.5rem">100+ Courses Available</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          
-              <div class="card Regular shadow border-0 ">
-                <div class="row w-100">
-                  <div class="col-md-3 text-center">
-                    <img src="./Images/geometryImage.jpg" style="margin-top: 20px;" class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-md-9">
-                    <div class="card-body">
-                      <h4 class="card-title fw-bold">Geometry</h4>
-                      <p class="card-text fs-1.5rem">20+ Courses Available</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          
-              <div class="card Regular shadow border-0 ">
-                <div class="row w-100">
-                  <div class="col-md-3 text-center">
-                    <img src="./Images/cardImage.jpg" style="margin-top: 20px;" class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-md-9">
-                    <div class="card-body">
-                      <h4 class="card-title fw-bold">Finance Management</h4>
-                    <p class="card-text fs-1.5rem">10+ Courses Available</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card Regular shadow border-0 ">
-                <div class="row w-100">
-                  <div class="col-md-3 text-center">
-                  <img src="./Images/growthImage.jpg" style="margin-top: 20px;" class="img-fluid rounded-start" alt="...">
-            </div>
-            <div class="col-md-9">
-              <div class="card-body">
-                <h4 class="card-title fw-bold">Self Development</h4>
-                <p class="card-text fs-1.5rem">10+ Courses Available</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-          <div class="card  Regular shadow border-0 ">
-            <div class="row w-100">
-              <div class="col-md-3 text-center">
-                <img src="./Images/chatImage.jpg" style="margin-top: 20px;" class="img-fluid rounded-start" alt="...">
-              </div>
-              <div class="col-md-9">
-                <div class="card-body">
-                  <h4 class="card-title fw-bold ">Social Communication</h4>
-                  <p class="card-text fs-1.5rem">10+ Courses Available</p>
-                </div>
-              </div>
-          </div>
-        </div>
-          </div>
-          </section> -->
           
        <!-----==========popular===============-->
        <section id="courses" class="pt-md-5 px-md-5 container-fluid">
@@ -381,19 +293,18 @@
               <div class="card w-100  border-0 Regular shadow  rounded" style="width:14rem">
                 <img src="./Images/courseImage1.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Finance Management</h5>
-                  <p class="d-flex justify-content-between " style=" align-items: center;">
-                    <span class="material-symbols-sharp">
+                  <h5  class="card-title fw-bold">Finance Management</h5>
+                  <span class="d-flex justify-content-between " style=" align-items: center;">
+                    <p><span class="material-symbols-sharp">
                       person
-                      </span>
-                      300+
-                    <span class="material-symbols-rounded">
+                      </span>300+</p>
+                    <p><span class="material-symbols-rounded">
                       star
-                    </span>4.9
-                    <span class="material-symbols-outlined">
+                    </span>4.9</p>
+                    <p><span class="material-symbols-outlined">
                       currency_rupee
-                      </span>1000
-                    </p>
+                      </span>15000</p>
+                    </span>
                 </div>
               </div>
             </div>
@@ -401,7 +312,7 @@
               <div class="card w-100   border-0 Regular shadow  rounded" style="width:14rem">
                 <img src="./Images/courseImage2.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">App Development</h5>
+                  <h5 class=" card-title fw-bold">App Development</h5>
                   <span class="d-flex justify-content-between">
                     <p><span class="material-symbols-sharp">
                       person
@@ -420,7 +331,7 @@
               <div class="card w-100   border-0 Regular shadow  rounded"  style="width:14rem">
                 <img src="./Images/courseImage5.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Mathematics</h5>
+                  <h5 class="card-title fw-bold">Mathematics</h5>
                   <span class="d-flex justify-content-between">
                     <p><span class="material-symbols-sharp">
                       person
@@ -439,7 +350,7 @@
               <div class="card w-100   border-0 Regular shadow  rounded"  style="width:14rem">
                 <img src="./Images/courseImage3.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Chemistry</h5>
+                  <h5 class=" card-title fw-bold">Chemistry</h5>
                   <span class="d-flex justify-content-between">
                     <p><span class="material-symbols-sharp">
                       person
@@ -458,7 +369,7 @@
                 <div class="card w-100   border-0 Regular shadow  rounded"  style="width:14rem">
                   <img src="./Images/courseImage1.png" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title">Finance Management Pro</h5>
+                    <h5 class="card-title fw-bold">Finance Management Pro</h5>
                     <span class="d-flex justify-content-between">
                         <p><span class="material-symbols-sharp">
                           person
@@ -478,7 +389,7 @@
                 <div class="card w-100   border-0 Regular shadow  rounded"  style="width:14rem">
                   <img src="./Images/courseImage4.png" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title">Carrier Advice</h5>
+                    <h5 class="card-title fw-bold">Carrier Advice</h5>
                     <span class="d-flex justify-content-between">
                         <p><span class="material-symbols-sharp">
                           person
@@ -659,7 +570,7 @@
             <div class="row">
                 <div class="col-lg-12 text-start">
                     <div class="footer-copyright-text">
-                        <p class="text-center">Copyrights reserved by &copy;<strong>digitalshakha</strong></p>
+                        <p class="text-center fs-5">Copyrights reserved by &copy;<strong>digitalshakha</strong></p>
                     </div>
                 </div>
             </div>
