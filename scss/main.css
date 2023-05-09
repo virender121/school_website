@@ -7,7 +7,10 @@
 :root {
   --primary:#fea116;
   --light: #f1f8ff;
-  --dark:#0f172b;
+  --white:#F5F5F5;
+  --gray:#636973;
+  --blue:#0D58C9;
+  --darkblue:#0C1B31;
 }
 
 body {
@@ -67,7 +70,7 @@ body {
   padding: 20px;
 }
 
-.right_image{
+ /* .right_image{
   opacity: 0;
   animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
   animation-delay: 2s, 3s;
@@ -97,7 +100,7 @@ body {
     transform: scale(1);
     opacity: 1;
   }
-}
+}  */
 
 /*====================footer================*/
 .footer {
