@@ -80,154 +80,147 @@
                 <a class="nav-link" href="contact.html">Contact Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Login</a>
+                <a class="nav-link" href="login.html">Login</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Sign Up</a>
+                <a class="nav-link" href="register.html">Sign Up</a>
               </li>
              
             </ul>
           </div>
         </div>
       </nav>
-          <!--==============main -content====================-->
-        
-          <section>
-            <div class="container-fliud">     
-                <div class="container">
-                    <div class="row row-cols-lg-6 justify-content-center">
-                        <div class="col text-center mx-5">
-                            <p><span class="material-symbols-outlined" id="material-symbols-outlined">
-                                mail
-                            </span></p>
-                            <h4 style="color: red;">E-mail &Phone</h4>
-                            <div class="fs-5 p-1">
-                                <p style="color: rgb(76, 76, 126);">Admission</p>
-                                <p style="color: red;">admission@onlearner.org.in</p>
-                                <p style="color: rgb(76, 76, 126); white-space: nowrap; ">+44 (0)1253 774 321</p>
-                                <p style="color: rgb(76, 76, 126); white-space: nowrap;">School Reception/General enquiries</p>
 
-                                <p style="color: red;">info@onlearner.org.in</p>
-                                <p  style="color: rgb(76, 76, 126); white-space: nowrap;">+44 (0)1253 774 321</p>
-                                <p  style="color: rgb(76, 76, 126);">Facilities hire</p>
-                                <p style="color: red;">m.schwad@onlearner.org.in</p>
-                                <p  style="color: rgb(76, 76, 126); white-space: nowrap;">+44 (0)1253 774 321</p>
+
+      <div class="header__featured-image" style="background-image: url('./Images/ContactBanner.jpg');">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="breadcrumbs">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item "><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active text-white" aria-current="page"> Contact Us</li>
+                  </ol>
+                </nav>
+              </div>
+              <h1 class="title"> Contact Us</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+          <!--==============main -content====================-->
+          <div class="container-fluid mt-5">
+            <div class="row mt-2">
+              <div class="col-md-6 mt-5">
+                <p class=" text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi consectetur laborum dignissimos vel dolore ducimus laboriosam expedita nulla sunt dolores.</p>
+                <ul>
+                  
+                  <span class="hightlight-contact-info">
+                    <li class="email-info text-center"><i class="fa fa-envelope" aria-hidden="true"></i> info@demo.com</li>
+                    <li class="text-center"><i class="fa fa-phone" aria-hidden="true"></i> <span class="highlight-text">+91 11 1111 2900</span></li>
+                  </span>
+                </ul>
+              </div>
+              <div class="col-md-6 float-start">
+          
+                  <!-- Card content goes here -->
+                  <div class="container">
+                    <div class="form-container p-3">
+          
+              <form class="row g-2 md-6">
+                  <!-- <span class="text-danger fs-5 fw-bolder"><hr/></span> -->
+                  <h4>GET IN TOUCH</h4>
+                  <h2 class="form-headline">Send us a message</h2>
+      
+                  <div class="form-group">
+                      <label for="name">Name <span class="text-danger">*</span></label>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <input type="text" id="name" class="form-control" name="first_name" required/>
+                          <!-- <label for="name" class="form-sublabel after">First</label> -->
+                        </div>
+                        <div class="col-md-6">
+                          <input type="text" id="last_name" class="form-control" name="last_name"  required/>
+                          <!-- <label for="last_name" class="form-sublabel after">Last</label> -->
+                        </div>
+                      </div>
+                    </div>
+                  <div class="col-12">
+                    <label for="email">E-mail<span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="email"required/>
+                  </div>
+                
+                  <div class="col-12">
+                  
+                      <div class="form-group">
+                          <label for="department">Department<span class="text-danger">*</span></label>
+                          <div id="department">
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="department" id="admissions" value="Admissions" required>
+                              <label class="form-check-label" for="admissions">
+                                Admissions
+                              </label>
                             </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="department" id="facilities_hire" value="Facilities Hire" required>
+                              <label class="form-check-label" for="facilities_hire">
+                                Facilities Hire
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="department" id="nursery" value="Nursery" required>
+                              <label class="form-check-label" for="nursery">
+                                Nursery
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="department" id="prep_school" value="Prep-Prep &amp; Prep School" required>
+                              <label class="form-check-label" for="prep_school">
+                                Prep-Prep &amp; Prep School
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="department" id="general_enquiry" value="General Enquiry" required>
+                              <label class="form-check-label" for="general_enquiry">
+                                General Enquiry
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="department" id="website_issues" value="Website Issues" required>
+                              <label class="form-check-label" for="website_issues">
+                                Website Issues
+                              </label>
+                            </div>
+                          </div>
                         </div>
                         
-                        <div class="col text-center mx-5">
-                            <p><span class="material-symbols-outlined" id="material-symbols-outlined">
-                                home
-                            </span></p>
-                            <h4 style="color: red;">Address</h4>
-                            <div class='fs-5 p-1' style="color: rgb(76, 76, 126);">
-                                <p>onlearner School</p>
-                                <p>Headmaster:</p>
-                                <p  style="color: rgb(76, 76, 126); white-space: nowrap;">Mr Jeremy Quartermain</p>
-                                <p>Broadway</p>
-                                <p>Fleetwood</p>
-                                <p>Lancashire</p>
-                                <p>FY7 8JW</p>
-                                <p>UNITED KINGDOM</p>
-                                
-                            </div>  
-                            <p class="fs-5"style="color: red;"><a href="#">View On Google Map</a></p>  
-                        </div>  
-                                         
+                  <div class="mb-3 p-1">
+                      <label for="exampleFormControlTextarea1" class="form-label">Message<span class="text-danger">*</span></label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                     </div>
-                    
-
-                    
-                </div>
-            </div>
-        </section>
-        <!--=======form===============-->
-        <div class="container">
-        <div class="form-container p-3">
-        <form class="row g-2">
-            <span class="text-danger fs-5 fw-bolder"><hr/></span>
-        
-            <h3 class="text-danger fs-4 fw-bolder mb-3">Contact Form</h3>
-
-            <div class="form-group">
-                <label for="name">Name <span class="text-danger">*</span></label>
-                <div class="row">
-                  <div class="col-md-6">
-                    <input type="text" id="name" class="form-control" name="first_name" required/>
-                    <!-- <label for="name" class="form-sublabel after">First</label> -->
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Contact</button>
                   </div>
-                  <div class="col-md-6">
-                    <input type="text" id="last_name" class="form-control" name="last_name"  required/>
-                    <!-- <label for="last_name" class="form-sublabel after">Last</label> -->
-                  </div>
-                </div>
+              
+      
+                </form>
+                <span class="text-danger fs-8 fw-bolder"><hr/></span>
               </div>
-            <div class="col-12">
-              <label for="email">E-mail<span class="text-danger">*</span></label>
-              <input type="text" class="form-control" id="email"required/>
-            </div>
-          
-            <div class="col-12">
+      
+              
+          </div>
+          </div>
+       
+      </div>
+      </div>
+   
+        
             
-                <div class="form-group">
-                    <label for="department">Department<span class="text-danger">*</span></label>
-                    <div id="department">
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="department" id="admissions" value="Admissions" required>
-                        <label class="form-check-label" for="admissions">
-                          Admissions
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="department" id="facilities_hire" value="Facilities Hire" required>
-                        <label class="form-check-label" for="facilities_hire">
-                          Facilities Hire
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="department" id="nursery" value="Nursery" required>
-                        <label class="form-check-label" for="nursery">
-                          Nursery
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="department" id="prep_school" value="Prep-Prep &amp; Prep School" required>
-                        <label class="form-check-label" for="prep_school">
-                          Prep-Prep &amp; Prep School
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="department" id="general_enquiry" value="General Enquiry" required>
-                        <label class="form-check-label" for="general_enquiry">
-                          General Enquiry
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="department" id="website_issues" value="Website Issues" required>
-                        <label class="form-check-label" for="website_issues">
-                          Website Issues
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-                  
-            <div class="mb-3 p-1">
-                <label for="exampleFormControlTextarea1" class="form-label">Message<span class="text-danger">*</span></label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-              </div>
-            <div class="col-12">
-              <button type="submit" class="btn btn-primary">Contact</button>
-            </div>
-        
+          
+          
 
-          </form>
-          <span class="text-danger fs-8 fw-bolder"><hr/></span>
-        </div>
-
-        
-    </div>
-    
-</div>
+           
               <!--===========footer============-->
         <footer class="footer">
             <div class="container">
