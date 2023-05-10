@@ -1,8 +1,8 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} */
 
 :root {
   --primary:#fea116;
@@ -12,10 +12,22 @@
   --blue:#0D58C9;
   --darkblue:#0C1B31;
 }
+.container-fluid{
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
 
 body {
   background-color: #fff;
+  overflow: hidden;
 }
+body {
+  overflow-y: scroll;
+}
+
+
 h1, h2, h3, h4, h5, h6 {
   color: var(--darkblue);
 }
@@ -283,3 +295,12 @@ form{
   padding-top: 10px;
   border-bottom: 3px solid #ec1c24;
 }
+/* @media screen and(max-width:768px) {
+       .dropdown-item{
+        display: flex;
+        flex-direction: column;
+       }
+} */
+
+
+
