@@ -7,30 +7,38 @@
     --primary:#fea116;
     --light: #f1f8ff;
     --dark:#0f172b;
+    --gray:#636973;
+    --blue:#0D58C9;
+    --darkblue:#0C1B31;
+  }
 
-}
 body{
     background-color: #fff;
 }
-p{
-    
-}
+
+
 
 /* =====================Header section============ */
-
-.btn{
+.btn {
     font-weight: 500;
     text-transform: uppercase;
     transition: 0.5s;
-    color: #fff;
+    color: var(--white);
+    background-color: var(--blue);
 }
 .btn.btn-primary,
-.btn.btn-secondary{
+.btn.btn-secondary {
     color: #fff;
 }
-.btn .btn-outline-primary{
+.btn.btn-outline-primary {
     color: #fff;
 }
+.btn:hover {
+    background-color: #4993c9;
+    color: #fff;
+}
+
+
 .carousel-caption{
     top: 10;
     left: 0;

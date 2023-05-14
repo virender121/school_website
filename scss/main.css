@@ -61,6 +61,8 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
+
+
 .carousel-caption {
   top: 10;
   left: 0;
@@ -253,7 +255,7 @@ height: 480px;
 }
 
 .main-content{
-	width: 75%;
+	width: 100%;
 	border-radius: 20px;
 	box-shadow: 0 5px 5px rgba(0,0,0,.4);
 	margin: 5em auto;
@@ -265,9 +267,10 @@ height: 480px;
 .login_form{
 	background-color: #fff;
 	border-top-right-radius:20px;
-	border-bottom-right-radius:20px;
+	border-bottom-right-radius:20px; 
 	border-top:1px solid #ccc;
-	border-right:1px solid #ccc;
+	border:1px solid #ccc;
+  margin-left: 4rem;
 }
 form{
 	padding: 0 2em;
@@ -295,12 +298,24 @@ form{
   padding-top: 10px;
   border-bottom: 3px solid #ec1c24;
 }
-/* @media screen and(max-width:768px) {
-       .dropdown-item{
-        display: flex;
-        flex-direction: column;
-       }
-} */
 
 
-
+  @media (max-width: 768px) {
+    .navbar-nav .dropdown-menu {
+      position: static;
+      float: none;
+      width: 100%;
+      margin-top: 0;
+      background-color: transparent;
+      border: 0;
+      box-shadow: none;
+      transform: none !important;
+    }
+  
+    .navbar-nav .dropdown-menu > li {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;
+    }
+  }
+  

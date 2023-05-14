@@ -25,7 +25,7 @@
 
     <div class="container-xxl bg-white p-0">
         <!--========Navigation Bar===========-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg  sticky-top navbar-light bg-light">
             <div class="container-fluid">
               <a class="navbar-brand" href="index.html">
                 <img src="./Images/NavLogo.png" alt="Logo">
@@ -90,8 +90,8 @@
           </nav>
          
           <!--=========registration content================-->
-          <div class="container-fluid">
-            <div class="row mt-5">
+          <!-- <div class="container-fluid d-flex justify-content-center">
+            <div class="row mt-5 d-flex justify-content-center">
                 <div class="col-md-6">
                     <h2 class="fw-bold">Welcome to Our Website!</h2>
                     <p class="fs-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur urna a velit finibus, vel maximus lorem commodo. Aenean id metus eu massa eleifend aliquam. Sed ullamcorper fringilla lorem, in consequat libero accumsan eget. Sed porta nibh ut massa malesuada, sit amet vestibulum urna tempor. Nunc id ultrices velit, ut consectetur elit.</p>
@@ -101,7 +101,7 @@
                         <div class="col-md-12 login_form ">
                             <h2>Register</h2>
                         </div>
-                        <div class="row mx-1">
+                        <div class="row  d-flex justify-content-center">
                             <form control="" class="form-group">
                                 <div class="row">
                                     <input type="text" name="name" id="name" class="form__input" placeholder="Name">
@@ -130,7 +130,51 @@
                     </div>
                 </div>
             </div>
+        </div> -->
+
+       <div class="container-fluid">
+    <div class="row mt-5 justify-content-center">
+        <div class="col-md-6">
+            <h2 class="fw-bold">Welcome to Our Website!</h2>
+            <p class="fs-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur urna a velit finibus, vel maximus lorem commodo. Aenean id metus eu massa eleifend aliquam. Sed ullamcorper fringilla lorem, in consequat libero accumsan eget. Sed porta nibh ut massa malesuada, sit amet vestibulum urna tempor. Nunc id ultrices velit, ut consectetur elit.</p>
         </div>
+        <div class="col-md-6">
+            <div class="row main-content text-center justify-content-center align-items-center">
+                <div class="col-md-12 login_form">
+                    <h2>Register</h2>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <form control="" class="form-group">
+                        <div class="row">
+                            <input type="text" name="name" id="name" class="form__input" placeholder="Name">
+                        </div>
+                        <div class="row">
+                            <input type="email" name="email" id="email" class="form__input" placeholder="Email">
+                        </div>
+                        <div class="row">
+                            <input type="password" name="password" id="password" class="form__input" placeholder="Password">
+                        </div>
+                        <div class="row">
+                            <input type="password" name="confirm_password" id="confirm_password" class="form__input" placeholder="Confirm Password">
+                        </div>
+                        <div class="row">
+                            <span><input type="checkbox" name="agree_terms" id="agree_terms" class="">
+                            <label for="agree_terms">I agree to the terms and conditions</label></span>
+                        </div>
+                        <div class="row">
+                            <input type="submit" value="Register"  class="btn fw-900 text-center mt-2" style="background-color:var(--blue); color:var(--white);">
+                        </div>
+                    </form>
+                </div>
+                <div class="row">
+                    <p>Already have an account? <a href="login.html">Log in here</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
         
         
               <!--===========footer============-->
