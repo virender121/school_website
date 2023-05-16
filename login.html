@@ -91,19 +91,19 @@
          
           <!--=========about us content================-->
           <div class="container-fluid justify-content-center">
-            <div class="row mt-5 justify-content-center p-4">
+            <div class="row mt-5 justify-content-center">
                 <div class="col-md-6 ">
                     <h2 class="fw-bold text-center">Welcome to Our Website!</h2>
                     <p class="fs-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur urna a velit finibus, vel maximus lorem commodo. Aenean id metus eu massa eleifend aliquam. Sed ullamcorper fringilla lorem, in consequat libero accumsan eget. Sed porta nibh ut massa malesuada, sit amet vestibulum urna tempor. Nunc id ultrices velit, ut consectetur elit.</p>
                 </div>
                 
-                <div class="col-md-6 justify-content-center">
-                    <div class=" card login-box  justify-content-center">
+                <div class="col-md-6 ">
+                    <div class=" card login-box ">
                         
                       <div class="card-body">
                        
                         <div class="col">
-                          <form class="form-group   p-3" id="loginForm">
+                          <form class="form-group" id="loginForm">
                             <h2 class="text-center">Login</h2>
                             <div class="form-group user-box">
                               <input type="text" name="username" id="username" class="form-control " placeholder="Username">
@@ -131,7 +131,61 @@
                   
                         </div>
                     </div>
-                        
+                    <style>
+                      .login-box {
+                        width: 400px;
+                        margin: 0 auto;
+                        background: #f0f0f0;
+                        padding: 20px;
+                        border-radius: 5px;
+                      }
+                    
+                      .login-box h2 {
+                        text-align: center;
+                        margin-bottom: 20px;
+                      }
+                    
+                      .form-group {
+                        margin-bottom: 20px;
+                      }
+                    
+                      .form-control {
+                        width: 100%;
+                        height: 40px;
+                        padding:5px 10px;
+                        border: 1px solid #ccc;
+                        border-radius: 5px;
+                      }
+                    
+                      .form-check-label {
+                        margin-left: 5px;
+                      }
+                    
+                      .btn-primary {
+                        width: 100%;
+                        height: 40px;
+                        background: #007bff;
+                        border: none;
+                        color: #fff;
+                        border-radius: 5px;
+                        cursor: pointer;
+                      }
+                    
+                      .btn-primary:hover {
+                        background: #0056b3;
+                      }
+                    
+                      p {
+                        text-align: center;
+                        margin-top: 20px;
+                      }
+                    
+                      a {
+                        color: #007bff;
+                        text-decoration: none;
+                      }
+                    </style>
+                    
                     <script>
                       function validateLoginForm(event) {
                         event.preventDefault();
@@ -144,7 +198,7 @@
                         const storedPassword = JSON.parse(localStorage.getItem('password'));
                     
                         if (email === storedEmail && password === storedPassword) {
-                          window.location.href = 'home.html';
+                          window.location.href = 'index.html';
                         } else {
                           // Display an alert indicating incorrect email or password
                           window.alert('Incorrect email or password');
@@ -227,7 +281,7 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js"></script>
 
     <!--js file-->
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
     <!--jquery CDN link-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <!--owl js link-->

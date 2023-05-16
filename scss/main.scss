@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+*,
+*::before,
+*::after {
+  box-sizing: none;
+}
 :root{
     --primary:#fea116;
     --light: #f1f8ff;
@@ -48,6 +53,12 @@ list-group-item {
   }
 
 /* =====================Header section============ */
+.header__featured-image {
+    /* Add your background image styles here */
+    background-size: cover;
+    background-position: center;
+    /* Add any other background styles as needed */
+  }
 .btn {
     font-weight: 500;
     text-transform: uppercase;

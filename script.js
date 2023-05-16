@@ -92,7 +92,7 @@ function validateRegistrationForm(event) {
     console.log(retrievedData);
     const passwordData = JSON.parse(localStorage.getItem('password'))
     console.log(passwordData)
-    window.location.href = 'index.html';
+    window.location.href ='login.html';
    
   }
   
