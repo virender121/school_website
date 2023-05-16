@@ -98,12 +98,12 @@
                 </div>
                 
                 <div class="col-md-6 justify-content-center">
-                    <div class=" card login-box">
+                    <div class=" card login-box  justify-content-center">
                         
                       <div class="card-body">
                        
                         <div class="col">
-                          <form class="form-group   p-3">
+                          <form class="form-group   p-3" id="loginForm">
                             <h2 class="text-center">Login</h2>
                             <div class="form-group user-box">
                               <input type="text" name="username" id="username" class="form-control " placeholder="Username">
@@ -118,7 +118,8 @@
                               </div>
                             </div>
                             <div class="form-group text-center">
-                              <input type="submit" value="Submit" class="btn btn-primary btn-block">
+                              <input type="submit" value="Submit" class="btn btn-primary btn-block" onclick="validateLoginForm(event)">
+                             
                             </div>
                           </form>
                           <p>Don't have an account? <a href="register.html">Register Here</a></p>
@@ -131,7 +132,37 @@
                         </div>
                     </div>
                         
-        
+                    <script>
+                      function validateLoginForm(event) {
+                        event.preventDefault();
+                    
+                        // Get form input values
+                        const email = document.getElementById('username').value.trim();
+                        const password = document.getElementById('password').value.trim();
+                    
+                        const storedEmail = JSON.parse(localStorage.getItem('email'));
+                        const storedPassword = JSON.parse(localStorage.getItem('password'));
+                    
+                        if (email === storedEmail && password === storedPassword) {
+                          window.location.href = 'home.html';
+                        } else {
+                          // Display an alert indicating incorrect email or password
+                          window.alert('Incorrect email or password');
+                        }
+                      }
+                    
+                      document.querySelector('#loginForm').addEventListener('submit', function(event) {
+                        event.preventDefault();
+                        validateLoginForm(event);
+                      });
+                    </script>
+                  
+                    
+                    
+                    
+                    
+                    
+                    
         
        
               <!--===========footer============-->
@@ -196,7 +227,7 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js"></script>
 
     <!--js file-->
-    <!-- <script src="./js/main.js"></script> -->
+    <script src="script.js"></script>
     <!--jquery CDN link-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <!--owl js link-->

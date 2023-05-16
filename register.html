@@ -104,8 +104,8 @@
                       </li>
                       <li id="cid_1" class="form-input-wide text-start" data-type="control_head">
                         <div class="form-header-group header-small">
-                          <div class="header-text httac htvam">
-                            <h3 id="header_1" class="form-header" data-component="header">Student Registration Form</h3>
+                          <div class="header-text httac htvam text-center">
+                            <h3 id="header_1" class="form-header fs-5 data-component="header">Student Registration Form</h3>
                           </div>
                         </div>
                       </li>
@@ -113,7 +113,7 @@
                         <div id="cid_67" class="form-input-wide text-end" data-layout="full">
                           <div id="text_67" class="form-html" data-component="text" tabindex="0">
                             <div style="line-height:18px;text-align:right;padding-top:24px;">
-                              <div style="font-size:12pt;"><strong>ACME&nbsp;CITY&nbsp;COLLEGE</strong></div>
+                              <div style="font-size:12pt;"><strong>On&nbsp;LEARNER&nbsp;</strong></div>
                               <div style="font-size:10pt;">123 Maple Street, Houston, TX, 77002</div>
                               <div style="line-height:14px;">
                                 <div style="font-size:8pt;">example@example.com</div>
@@ -132,7 +132,7 @@
                        
           
             
-                            <form class="row g-3">
+                            <form class="row g-3" id="registrationForm">
                               <div class="col-md-12 ">
                                 <label class="form-label" for="first_4">Full Name</label>
                                 <div class="input-group justify-content-between">
@@ -180,12 +180,12 @@
                               
                               <div class="col-md-6">
                                 <label class="form-label" for="input_10">Password</label>
-                                <input type="email" id="input_10" name="password" class="form-control border-top-0 border-start-0 border-end-0 px-2" placeholder="****" required>
+                                <input type="password" id="input_10" name="password" class="form-control border-top-0 border-start-0 border-end-0 px-2" placeholder="****" required>
                               </div>
                               </div>
                               <div class="col-md-12">
                                 <label class="form-label" for="input_61_full">Phone Number</label>
-                                <input type="tel" id="input_61_full" name="phone_number" class="form-control border-top-0 border-start-0 border-end-0 px-2" placeholder="(000) 000-0000" required>
+                                <input type="number" id="input_61_full" name="phone_number" class="form-control border-top-0 border-start-0 border-end-0 px-2" placeholder="(000) 000-0000" required>
                               </div>
                      
                       <div class="form-group row">
@@ -642,7 +642,8 @@
                              </div>
                             <div class="form-group  col-md-12 text-center mt-2">
                                 <input type="Submit" value="Print" class="btn btn-primary btn-block">
-                                <input type="submit" value="Submit" class="btn btn-primary btn-block">
+                                <input type="submit" value="Submit" class="btn btn-primary btn-block" onClick="validateRegistrationForm()">
+
                               </div>
                             </form>
                             <p class="text-center">Already have an account? <a href="login.html">Login Here</a></p>
@@ -651,125 +652,7 @@
                 </div>
                 </div>
                         
-                       
-<!--                           
-                            <div class="col-md-6">
-                              <div class="form-group">
-                                <label for="first_62">First Name</label>
-                                <input type="text" id="first_62" name="q62_personTo62[first]" class="form-control border-top-0 border-start-0 border-end-0 px-2" placeholder="First Name" required maxlength="100">
-                              </div>
-                            </div>
-                            <div class="col-md-6">
-                              <div class="form-group">
-                                <label for="last_62">Last Name</label>
-                                <input type="text" id="last_62" name="q62_personTo62[last]" class="form-control border-top-0 border-start-0 border-end-0 px-2" placeholder="Last Name" required maxlength="100">
-                              </div>
-                            </div>
-                          </div>
-                          
-                          <div class="row">
-                            <div class="col-md-6">
-                              <div class="form-group">
-                                <label for="input_46">Relationship</label>
-                                <input type="text" id="input_46" name="q46_relationship46" class="form-control border-top-0 border-start-0 border-end-0 px-2" placeholder="ex. Father, Mother, etc." maxlength="100">
-                              </div>
-                            </div>
-                          </div>
-                          
-                          <div class="row">
-                            <div class="col-md-6">
-                              <div class="form-group">
-                                <label for="input_63_addr_line1">Street Address</label>
-                                <input type="text" id="input_63_addr_line1" name="q63_addressOf63[addr_line1]" class="form-control border-top-0 border-start-0 border-end-0 px-2" placeholder="Street Address" required maxlength="100">
-                              </div>
-                            </div>
-                            <div class="col-md-6">
-                              <div class="form-group">
-                                <label for="input_63_addr_line2">Street Address Line 2</label>
-                                <input type="text" id="input_63_addr_line2" name="q63_addressOf63[addr_line2]" class="form-control  border-top-0 border-start-0 border-end-0 px-2" placeholder="Street Address Line 2" maxlength="100">
-                              </div>
-                            </div>
-                          </div>
-                          
-                          <div class="row">
-                            <div class="col-md-6">
-                              <div class="form-group">
-                                <label for="input_63_city">City</label>
-                                <input type="text" id="input_63_city" name="q63_addressOf63[city]" class="form-control border-top-0 border-start-0 border-end-0 px-2" placeholder="City" required maxlength="60">
-                              </div>
-                            </div>
-                            <div class="col-md-6">
-                              <div class="form-group">
-                                <label for="input_63_state">State / Province</label>
-                                <input type="text" id="input_63_state" name="q63_addressOf63[state]" class="form-control border-top-0 border-start-0 border-end-0 px-2" placeholder="State / Province" required maxlength="60">
-                              </div>
-                            </div>
-                          </div>
-                          
-                          <div class="row">
-                            <div class="col-md-6">
-                              <div class="form-group">
-                                <label for="input_63_postal">Postal / Zip Code</label>
-                                <input type="text" id="input_63_postal" name="q63_addressOf63[postal]" class="form-control border-top-0 border-start-0 border-end-0 px-2" placeholder="Postal / Zip Code" required maxlength="20">
-                              </div>
-                            </div>
-                          </div> -->
-                          
-                          <!-- <u
-                            <li class="list-group-item">
-                              <label class="form-label" for="input_name">Name</label>
-                              <input type="text" id="input_name" class="form-control">
-                            </li>
-                            <li class="list-group-item">
-                              <label class="form-label" for="input_age">Age</label>
-                              <input type="number" id="input_age" class="form-control">
-                            </li>
-                            <li class="list-group-item">
-                              <label class="form-label" for="input_address">Address</label>
-                              <input type="text" id="input_address" class="form-control">
-                            </li>
-                            <li class="list-group-item">
-                              <label class="form-label" for="input_emergency_contact">Emergency Contact</label>
-                              <input type="text" id="input_emergency_contact" class="form-control">
-                            </li>
-                            <li class="list-group-item">
-                              <label class="form-label" for="input_relationship">Relationship</label>
-                              <input type="text" id="input_relationship" class="form-control">
-                            </li>
-                            <li class="list-group-item">
-                              <label class="form-label" for="input_emergency_address">Address Of Person To Contact In Case Of Emergency</label>
-                              <input type="text" id="input_emergency_address" class="form-control">
-                            </li>
-                            <li class="list-group-item">
-                              <label class="form-label" for="input_emergency_phone">Phone Number Of Person To Contact In Case Of Emergency</label>
-                              <input type="tel" id="input_emergency_phone" class="form-control" placeholder="(000) 000-0000">
-                            </li>
-                            <li class="list-group-item">
-                              <label class="form-label" for="input_emergency_email">Email Of Person To Contact In Case Of Emergency</label>
-                              <input type="email" id="input_emergency_email" class="form-control">
-                            </li>
-                            <li class="list-group-item">
-                              <div class="accordion">
-                                <div class="accordion-header" id="academic_background">
-                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_academic_background" aria-expanded="false" aria-controls="collapse_academic_background">
-                                    Academic Background
-                                  </button>
-                                </div>
-                                <div id="collapse_academic_background" class="accordion-collapse collapse">
-                                  <div class="accordion-body">
-                                    <label class="form-label" for="input_high_school">High School Name</label>
-                                    <input type="text" id="input_high_school" class="form-control">
-                                  </div>
-                                </div>
-                              </div>
-                            </li>
-                            <li class="list-group-item">
-                              <label class="form-label" for="input_cv">Curriculum Vitae or List of Achievements</label> -->
-                              <!-- <input type="file" id="input_cv" class="form-control">
-                              <small class="form-text text-muted">File should be in pdf, doc/docx format.</small>
-                            </li>
-                          </ul> -->
-                          
+                                         
                    
                   
                 
@@ -856,7 +739,7 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js"></script>
 
     <!--js file-->
-    <!-- <script src="./js/main.js"></script> -->
+    <script src="script.js"></script>
     <!--jquery CDN link-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <!--owl js link-->
