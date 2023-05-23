@@ -148,7 +148,7 @@
                        
           
             
-                            <form class="row g-3" id="registrationForm">
+                            <form class="row g-3" id="registrationForm" action="store_registration.php" method="POST">
                               <div class="col-md-12 ">
                                 <label class="form-label" for="first_4">Full Name</label>
                                 <div class="input-group justify-content-between">
@@ -178,6 +178,20 @@
                                     <option value="4th Year">4th Year</option>
                                     <option value="5th Year">5th Year</option>
                                   </select>
+                                </div>
+                              </div>
+                              </div>
+                              <div class="col-md-12">
+                                <div class="row">
+                                <div class="col-md-6">
+                                  <label class="form-label" for="input_10">Email</label>
+                                  <input type="email" id="input_10" name="student_email" class="form-control border-top-0 border-start-0 border-end-0 px-2" placeholder="e.g. @yahoomail.com" required>
+                                </div>
+                              
+                                <div class="col-md-6">
+                                  <label class="form-label" for="input_10">Password</label>
+                                  <input type="password" id="input_10" name="password" class="form-control border-top-0 border-start-0 border-end-0 px-2" placeholder="e.g.****" required>
+                                 
                                 </div>
                               </div>
                               </div>
@@ -643,9 +657,8 @@
                             </div>
                              </div>
                             <div class="form-group  col-md-12 text-center mt-5 my-4">
-                              <input type="button" value="Print" class="btn btn-primary btn-block" onclick="printForm()">
                             
-                                <input type="submit" value="Submit" class="btn btn-primary btn-block" onClick="validateRegistrationForm()">
+                                <input type="submit" value="Submit" class="btn btn-primary btn-block" onclick="validateRegistrationForm()">
 
                               </div>
                             </form>
@@ -675,89 +688,70 @@
                   }
                 </script> -->
 
-                <script>
-                  function printForm() {
-                    // Open a new window
-                    var printWindow = window.open('', '_blank');
-                    
-                    // Get the HTML content of the form
-                    var formContent = document.documentElement.innerHTML;
-              
-                    // Write the form content to the new window
-                    printWindow.document.open();
-                    printWindow.document.write('<html><head><title>Print Form</title></head><body>');
-                    printWindow.document.write(formContent);
-                    printWindow.document.write('</body></html>');
-                    printWindow.document.close();
-                    
-                    // Trigger the print function in the new window
-                    printWindow.print();
-                  }
-                </script>
+               
            
 </div>
 
         
         
-        
-              <!--===========footer============-->
-        <footer class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 col-md-6">
-                        <div class="footer-pic">
-                            <div class="footer-logo">
-                                <a href="#"><img src="./Images/FooterLogo.png" alt=""></a>
-                            </div>
-                        </div>
-                    </div>
+         <!--===========footer============-->
+         <footer class="footer">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                      <div class="footer-pic">
+                          <div class="footer-logo">
+                              <a href="#"><img src="./Images/FooterLogo.png" alt=""></a>
+                          </div>
+                      </div>
+                  </div>
 
-                    <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
-                        <div class="footer-links">
-                            <h4 class="fw-bold" style="font-size: 1.7rem;">Link</h4>
-                            <ul>
-                                <li ><a href="index.html">Home</a></li>
-                                <li ><a href="about.html">About</a></li>
-                                <li><a href="#">Our Resources</a></li>
-                                <li><a href="#">Services</a></li>
-                            </ul>
-                        </div>
-                    </div>
- 
-                    <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
-                        <div class="footer-links">
-                            <h4  class="fw-bold" style="font-size: 1.7rem;">Community</h4>
-                            <ul>
-                                <li><a href="#">Go Premium</a></li>
-                                <li><a href="#">Team Plans</a></li>
-                                <li><a href="#">Refer a friend</a></li>
-                                <li><a href="#">Gift cards</a></li>
-                            </ul>
-                        </div>
-                    </div>
+                  <div class="col-lg-2 offset-lg-1 col-md-6 col-sm-6">
+                      <div class="footer-links">
+                          <h4 class="fw-bold" style="font-size: 1.7rem;">Link</h4>
+                          <ul>
+                              <li ><a href="index.html">Home</a></li>
+                              <li ><a href="about.html">About</a></li>
+                              <li><a href="#">Our Resources</a></li>
+                              <li><a href="#">Services</a></li>
+                          </ul>
+                      </div>
+                  </div>
 
-                    <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
-                        <div class="footer-links">
-                            <h4  class="fw-bold" style="font-size: 1.7rem;">Resources</h4>
-                            <ul>
-                                <li><a href="#">Support</a></li>
-                                <li><a href="#">Latest Updates</a></li>
-                                <li><a href="#">Updates Newslatter</a></li>
-                                <li><a href="#">Flow Management</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <hr/>
-            <div class="row">
-                <div class="col-lg-12 text-start">
-                    <div class="footer-copyright-text">
-                        <p class="text-center">Copyrights reserved by &copy;<strong>digitalshakha</strong></p>
-                    </div>
-                </div>
-            </div>
-        </footer>
+                  <div class="col-lg-2 offset-lg-1 col-md-6 col-sm-6">
+                      <div class="footer-links">
+                          <h4  class="fw-bold" style="font-size: 1.7rem;">Community</h4>
+                          <ul>
+                              <li><a href="#">Go Premium</a></li>
+                              <li><a href="#">Team Plans</a></li>
+                              <li><a href="#">Refer a friend</a></li>
+                              <li><a href="#">Gift cards</a></li>
+                          </ul>
+                      </div>
+                  </div>
+
+                  <div class="col-lg-2 offset-lg-1 col-md-6 col-sm-6">
+                      <div class="footer-links">
+                          <h4  class="fw-bold" style="font-size: 1.7rem;">Resources</h4>
+                          <ul>
+                              <li><a href="#">Support</a></li>
+                              <li><a href="#">Latest Updates</a></li>
+                              <li><a href="#">Updates Newslatter</a></li>
+                              <li><a href="#">Flow Management</a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <hr/>
+          <div class="row">
+              <div class="col-lg-12 text-start">
+                  <div class="footer-copyright-text">
+                      <p class="text-center">Copyrights reserved by &copy;<strong>digitalshakha</strong></p>
+                  </div>
+              </div>
+          </div>
+      </footer>
     <!--bootstrap js CDN-->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js"></script>
 

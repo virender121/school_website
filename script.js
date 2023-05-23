@@ -64,10 +64,10 @@ function validateRegistrationForm(event) {
       return;
     }
   
-    if (!addressPattern.test(streetAddress)) {
-        window.alert('Please enter a valid street address');
-      return;
-    }
+    // if (!addressPattern.test(streetAddress)) {
+    //     window.alert('Please enter a valid street address');
+    //   return;
+    // }
   
     if (!cityPattern.test(city)) {
         window.alert('Please enter a valid city');
@@ -83,24 +83,38 @@ function validateRegistrationForm(event) {
         window.alert('Please enter a valid postal/zip code.');
       return;
     }
+
+    
   
     // Store the email in local storage
-    localStorage.setItem('email',JSON.stringify(email));
-    localStorage.setItem('password',JSON.stringify(password))
+    // localStorage.setItem('email',JSON.stringify(email));
+    // localStorage.setItem('password',JSON.stringify(password))
 
-    const retrievedData = JSON.parse(localStorage.getItem('email'));
-    console.log(retrievedData);
-    const passwordData = JSON.parse(localStorage.getItem('password'))
-    console.log(passwordData)
+    // const retrievedData = JSON.parse(localStorage.getItem('email'));
+    // console.log(retrievedData);
+    // const passwordData = JSON.parse(localStorage.getItem('password'))
+    // console.log(passwordData)
     window.location.href ='login.html';
    
   }
   
   
-  
-document.querySelector('#registrationForm').addEventListener('submit', function (event) {
-    event.preventDefault();
+  document.querySelector('#registrationForm').addEventListener('submit', function (event) {
+    // event.preventDefault();
     validateRegistrationForm(event);
+      // Get form data
+      var formData = new FormData(this);
+
+      // Send form data to PHP script
+      var xhr = new XMLHttpRequest();
+      xhr.open('POST', 'store_registration.php', true);
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+          // Handle the response from the PHP script
+          console.log(xhr.responseText);
+        }
+      };
+      xhr.send(formData);
   });
   
 
